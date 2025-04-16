@@ -1,0 +1,87 @@
+
+.card{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    width: 400px;
+    height: 400px;
+
+    background: #383273;
+    background: linear-gradient(45deg, rgba(56, 50, 115, 1) 10%, rgba(82, 137, 171, 1) 28%, rgba(87, 176, 217, 1) 90%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courier New', 'Courier', sans-serif;
+    font-weight: 900;
+    
+}
+
+.card div{
+    color: white;
+}
+
+.card__number{
+    font-weight: 900;
+    font-size: 200px;
+
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.card__label{
+
+    font-size: 100px;
+}
+
+.card__subtitle{
+    margin-top: -20px;
+    font-size: 30px;
+}
+
+.number_one{
+    background-color: white;
+    width: 30px;
+    height: 120px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    z-index: 100;
+
+
+}
+
+.one{    
+    background-color: rgba(255, 255, 255, 0.911);
+    border-radius: 2px;
+    width: 25px;
+    height: 50px;
+
+    transform: rotate(60deg);
+
+
+
+
+    z-index: 1;
+}
+
+.number_zero{
+    margin-left: -10px;
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+
+    border-radius: 50%;
+    background: conic-gradient(#ffffff 100% 100%, transparent 100%);
+    mask: radial-gradient(circle, transparent 40%, rgb(235, 11, 11) 40%);
+
+    z-index: 2;
+}
+
+.back{
+    z-index: 0;
+}
