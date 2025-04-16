@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="frame" id="frame">
+            <div class="line l_1"></div>
+            <div class="line l_2"></div>
+            <div class="line l_3"></div>
+        </div>
+    </nav>
+
+    <script>
+    document.getElementById("frame").addEventListener("click", function () {
+        if (this.classList.contains("animacao")) {
+            this.classList.remove("animacao");
+            this.classList.add("animacao_rev");
+        } else {
+            this.classList.remove("animacao_rev");
+            this.classList.add("animacao");
+        }
+    });
+    </script>
+   
+</body>
+</html>
